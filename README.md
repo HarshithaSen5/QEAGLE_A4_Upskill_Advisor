@@ -23,7 +23,8 @@
 
 ---
 
-## 📂 Project Structure  
+## 📂 Project Structure 
+```
 upskill_advisor/
 │── backend/
 │   ├── data/                 # Course & JD seed data
@@ -41,7 +42,7 @@ upskill_advisor/
 │
 │── .gitignore
 │── README.md
-
+```
 
 ---
 
@@ -124,7 +125,10 @@ Latency (retrieval & response time)
     ReactUI -->|PDF Export| Download
     
 ### Architecture Diagram:
-    <img width="3600" height="842" alt="upskill_architecture_minimal_timeline_hd" src="https://github.com/user-attachments/assets/8186f79e-4920-4a54-895d-7386d5e604ca" />
+
+<img width="3600" height="842" alt="upskill_architecture_minimal_timeline_hd" src="https://github.com/user-attachments/assets/3a5ee6fb-7353-40a2-9d82-05552b422c61" />
+
+
 ---
 
 ## Future Improvements
@@ -145,6 +149,8 @@ Advanced Analytics Dashboard
 ### 🎯 Learning Path Output
 <img width="1890" height="945" alt="Screenshot 2025-09-27 110208" src="https://github.com/user-attachments/assets/730f34a8-4f38-4780-8bdb-50cc44732c82" />
 <img width="1894" height="956" alt="Screenshot 2025-09-27 110159" src="https://github.com/user-attachments/assets/f1e2fe8b-e137-46e2-9aad-d4a0149cc8f5" />
-![Last img](https://github.com/user-attachments/assets/e539e288-a73c-430a-a44e-5d8a0dbff17c)
+![Last img](https://github.com/user-attachments/assets/d2f8c53a-c046-453a-b69e-093e1cce51df)
 
+
+---
 
