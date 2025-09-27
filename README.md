@@ -1,58 +1,52 @@
-Upskill Advisor AI
+# 🚀 Upskill Advisor AI  
+**Your Personal Career Growth Assistant**
 
-Your Personal Career Growth Assistant
+---
 
-Upskill Advisor AI provides personalized learning paths tailored to user skills and job role goals. By combining Retrieval-Augmented Generation (RAG) with job description analysis, it helps professionals identify skill gaps and receive structured upskilling recommendations.
+## ✨ Features  
+- **RAG-based Hybrid Retrieval**: Combines MongoDB vector search with BM25-style keyword retrieval.  
+- **LLM-Powered Advisor**: Uses Ollama Phi-3 and MiniLM embeddings for context-aware recommendations.  
+- **Personalized Learning Plans**: Gap analysis against target job roles.  
+- **Course Timelines**: Structured roadmap with prerequisites, outcomes, and estimated duration.  
+- **Motivation Messages**: Encouragement included at the end of every learning plan.  
+- **PDF Export**: Downloadable personalized career roadmap.  
+- **Frontend Dashboard**: Clean React interface for role/skills input and path visualization.  
 
-Features:
+---
 
-RAG-based Hybrid Retrieval: Combines MongoDB vector search with BM25-style keyword retrieval.
+## 🛠 Tech Stack  
+- **Frontend**: React.js + TailwindCSS  
+- **Backend**: FastAPI (Python)  
+- **Database**: MongoDB (Atlas/local) with Vector Search  
+- **AI Models**: Ollama Phi-3 LLM, MiniLM (HuggingFace) embeddings  
+- **Other**: RAG pipeline for course + JD retrieval  
 
-LLM-Powered Advisor: Uses Ollama Phi-3 and MiniLM embeddings for context-aware recommendations.
+---
 
-Personalized Learning Plans: Gap analysis against target job roles.
-
-Course Timelines: Structured roadmap with prerequisites, outcomes, and estimated duration.
-
-Motivation Messages: Encouragement included at the end of every learning plan.
-
-PDF Export: Downloadable personalized career roadmap.
-
-Frontend Dashboard: Clean React interface for role/skills input and path visualization.
-
-Tech Stack
-
-Frontend: React.js + TailwindCSS
-
-Backend: FastAPI (Python)
-
-Database: MongoDB (Atlas/local) with Vector Search
-
-AI Models: Ollama Phi-3 LLM, MiniLM (HuggingFace) embeddings
-
-Other: RAG pipeline for course + JD retrieval
-
-Project Structure
-upskill_advisor/
+## 📂 Project Structure  
+upskill_advisor/ 
 │── backend/
-│   ├── data/                 # Course & JD seed data
-│   ├── models/               # MongoDB schemas
-│   ├── services/             # Retrieval & advisor services
-│   ├── main.py               # FastAPI entrypoint
-│   ├── seed_courses.py       # Script to seed courses
-│   ├── seed_jds.py           # Script to seed job descriptions
-│
-│── project/                  # Frontend root
-│   ├── src/                  # React components
-│   ├── index.html
-│   ├── package.json
-│   ├── tailwind.config.js
-│
-│── .gitignore
+│ ├── data/ # Course & JD seed data 
+│ ├── models/ # MongoDB schemas 
+│ ├── services/ # Retrieval & advisor services 
+│ ├── main.py # FastAPI entrypoint 
+│ ├── seed_courses.py # Script to seed courses 
+│ ├── seed_jds.py # Script to seed job descriptions 
+│ │── project/ # Frontend root 
+│ ├── src/ # React components 
+│ ├── index.html 
+│ ├── package.json 
+│ ├── tailwind.config.js 
+│ │── .gitignore 
 │── README.md
 
-Setup Instructions
-1. Clone Repository
+
+---
+
+## ⚙️ Setup Instructions  
+
+### 1. Clone Repository
+```bash
 git clone https://github.com/yourusername/QEAGLE_A4_Upskill_Advisor.git
 cd QEAGLE_A4_Upskill_Advisor
 
@@ -75,7 +69,6 @@ EMBED_MODEL=sentence-transformers/all-MiniLM-L6-v2
 LLM_MODEL=phi3
 
 4. Seed Database
-cd backend
 python seed_courses.py
 python seed_jds.py
 
@@ -83,9 +76,9 @@ python seed_jds.py
 uvicorn main:app --reload --port 8000
 
 
-Backend will run at: http://localhost:8000
+Backend: http://localhost:8000
 
-API Docs available at: http://localhost:8000/docs
+API Docs: http://localhost:8000/docs
 
 6. Run Frontend
 cd project
@@ -93,12 +86,9 @@ npm install
 npm run dev
 
 
-Frontend will run at: http://localhost:5173
- (or as shown in terminal).
+Frontend: http://localhost:5173
 
-Evaluation
-
-The system measures:
+📊 Evaluation
 
 Skill Coverage % (JD vs Recommended Skills)
 
@@ -106,24 +96,20 @@ Path Diversity (unique vs redundant courses)
 
 Latency (retrieval & response time)
 
-Architecture
-
-Here’s the architecture of the system:
-
+🏗 Architecture
 <img width="3600" height="842" alt="upskill_architecture_minimal_timeline_hd" src="https://github.com/user-attachments/assets/a779ee43-8cbc-4501-a5ff-33382c88aad1" />
-
-
-    User[User Input: Role & Skills] -->|Frontend| ReactUI
+flowchart LR
+    User[👤 User Input: Role & Skills] -->|Frontend| ReactUI
     ReactUI --> FastAPI
     FastAPI -->|Query| RAGPipeline
     RAGPipeline -->|Vector Search| MongoDB
     RAGPipeline -->|Embeddings| MiniLM
     RAGPipeline -->|LLM Reasoning| OllamaPhi3
-    RAGPipeline --> Recommendations[Personalized Learning Path]
+    RAGPipeline --> Recommendations[📚 Personalized Learning Path]
     Recommendations --> ReactUI
     ReactUI -->|PDF Export| Download
 
-Future Improvements:
+🔮 Future Improvements
 
 Role-specific fine-tuned recommendations
 
@@ -133,14 +119,8 @@ Multi-language support
 
 Advanced analytics dashboard
 
-Screenshots
-
-User Input:
+📸 Screenshots
+📝 User Input
 <img width="1889" height="946" alt="Screenshot 2025-09-27 103553" src="https://github.com/user-attachments/assets/cff15fb7-128a-42bb-aa24-b066ac6c70a3" />
-
-Learning Path Output:
-<img width="1890" height="945" alt="Screenshot 2025-09-27 110208" src="https://github.com/user-attachments/assets/807cbc6d-725d-4876-ba71-00643056db1f" />
-<img width="1894" height="956" alt="Screenshot 2025-09-27 110159" src="https://github.com/user-attachments/assets/341f2692-6edd-400e-967c-1d8f581558c2" />
-![Last img](https://github.com/user-attachments/assets/4e9d8911-1096-4006-ad5d-ae62d655e1af)
-
-
+🎯 Learning Path Output
+<img width="1890" height="945" alt="Screenshot 2025-09-27 110208" src="https://github.com/user-attachments/assets/807cbc6d-725d-4876-ba71-00643056db1f" /> <img width="1894" height="956" alt="Screenshot 2025-09-27 110159" src="https://github.com/user-attachments/assets/341f2692-6edd-400e-967c-1d8f581558c2" /> ![Last img](https://github.com/user-attachments/assets/4e9d8911-1096-4006-ad5d-ae62d655e1af) ```
