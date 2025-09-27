@@ -1,0 +1,237 @@
+{
+  "intro to python": {
+    "skills": ["python", "oop"],
+    "difficulty": "beginner",
+    "duration_weeks": 4,
+    "description": "Learn the basics of Python programming and object-oriented concepts.",
+    "prerequisites": "No prior programming experience required.",
+    "outcomes": [
+      "Write and execute basic Python programs.",
+      "Understand and apply object-oriented programming concepts.",
+      "Develop problem-solving skills using Python."
+    ]
+  },
+  "sql for data analysis": {
+    "skills": ["sql"],
+    "difficulty": "beginner",
+    "duration_weeks": 3,
+    "description": "Master SQL for querying and analyzing data in databases.",
+    "prerequisites": "Basic understanding of computers and data storage.",
+    "outcomes": [
+      "Write SQL queries to extract and filter data.",
+      "Use SQL functions to analyze and summarize data.",
+      "Work with relational databases efficiently."
+    ]
+  },
+  "statistics fundamentals": {
+    "skills": ["statistics"],
+    "difficulty": "beginner",
+    "duration_weeks": 3,
+    "description": "Understand the core concepts of statistics for data analysis.",
+    "prerequisites": "Basic math skills (algebra and arithmetic).",
+    "outcomes": [
+      "Apply descriptive statistics to summarize data.",
+      "Understand probability distributions and sampling.",
+      "Perform basic inferential statistical analysis."
+    ]
+  },
+  "pandas for data analysis": {
+    "skills": ["pandas", "numpy"],
+    "difficulty": "intermediate",
+    "duration_weeks": 4,
+    "description": "Analyze and manipulate data efficiently using Pandas and Numpy.",
+    "prerequisites": "Basic knowledge of Python programming.",
+    "outcomes": [
+      "Manipulate and clean datasets using Pandas.",
+      "Perform numerical computations with NumPy.",
+      "Handle real-world datasets for analysis."
+    ]
+  },
+  "data visualization with matplotlib & seaborn": {
+    "skills": ["matplotlib", "seaborn"],
+    "difficulty": "intermediate",
+    "duration_weeks": 3,
+    "description": "Create compelling data visualizations using Matplotlib and Seaborn.",
+    "prerequisites": "Basic Python and data analysis knowledge.",
+    "outcomes": [
+      "Visualize data trends with charts and graphs.",
+      "Customize plots for clear communication.",
+      "Use Seaborn for statistical data visualization."
+    ]
+  },
+  "excel for business analytics": {
+    "skills": ["excel"],
+    "difficulty": "beginner",
+    "duration_weeks": 2,
+    "description": "Leverage Excel for business analytics and data-driven decision making.",
+    "prerequisites": "Basic computer literacy.",
+    "outcomes": [
+      "Perform calculations using Excel formulas and functions.",
+      "Analyze datasets with pivot tables and charts.",
+      "Apply Excel tools for decision-making in business contexts."
+    ]
+  },
+  "powerbi essentials": {
+    "skills": ["powerbi"],
+    "difficulty": "intermediate",
+    "duration_weeks": 3,
+    "description": "Build interactive dashboards and reports using PowerBI.",
+    "prerequisites": "Basic understanding of data analysis and Excel.",
+    "outcomes": [
+      "Import and transform datasets in PowerBI.",
+      "Create interactive dashboards and reports.",
+      "Share and publish insights for business decision-making."
+    ]
+  },
+  "tableau crash course": {
+    "skills": ["tableau"],
+    "difficulty": "intermediate",
+    "duration_weeks": 3,
+    "description": "Get started with Tableau for data visualization and analytics.",
+    "prerequisites": "Basic knowledge of data and statistics.",
+    "outcomes": [
+      "Build dashboards using Tableau.",
+      "Visualize datasets with different chart types.",
+      "Apply Tableau filters and calculated fields for analysis."
+    ]
+  },
+  "machine learning with scikit-learn": {
+    "skills": ["ml algorithms", "scikit-learn"],
+    "difficulty": "intermediate",
+    "duration_weeks": 6,
+    "description": "Learn machine learning concepts and implement models using scikit-learn.",
+    "prerequisites": "Python programming, statistics, and linear algebra basics.",
+    "outcomes": [
+      "Understand supervised and unsupervised ML algorithms.",
+      "Build and evaluate ML models using scikit-learn.",
+      "Apply ML to solve classification and regression problems."
+    ]
+  },
+  "deep learning with tensorflow": {
+    "skills": ["tensorflow"],
+    "difficulty": "advanced",
+    "duration_weeks": 6,
+    "description": "Master deep learning techniques with TensorFlow.",
+    "prerequisites": "Strong Python, ML concepts, and linear algebra knowledge.",
+    "outcomes": [
+      "Build neural networks with TensorFlow.",
+      "Train and optimize deep learning models.",
+      "Apply DL to image, text, and structured data problems."
+    ]
+  },
+  "deep learning with pytorch": {
+    "skills": ["pytorch"],
+    "difficulty": "advanced",
+    "duration_weeks": 6,
+    "description": "Master deep learning techniques with PyTorch.",
+    "prerequisites": "Python, ML concepts, and basic neural network knowledge.",
+    "outcomes": [
+      "Design and implement neural networks with PyTorch.",
+      "Train models with custom datasets.",
+      "Leverage PyTorch for NLP and computer vision."
+    ]
+  },
+  "rag systems with langchain": {
+    "skills": ["langchain", "rag systems", "vector databases"],
+    "difficulty": "advanced",
+    "duration_weeks": 5,
+    "description": "Build retrieval-augmented generation systems using LangChain.",
+    "prerequisites": "Python, NLP fundamentals, and database basics.",
+    "outcomes": [
+      "Understand retrieval-augmented generation (RAG).",
+      "Build pipelines using LangChain for NLP tasks.",
+      "Integrate vector databases into AI applications."
+    ]
+  },
+  "devops for testers": {
+    "skills": ["jenkins", "maven", "ci/cd pipelines"],
+    "difficulty": "intermediate",
+    "duration_weeks": 4,
+    "description": "Learn DevOps practices and tools for software testers.",
+    "prerequisites": "Basic software testing knowledge.",
+    "outcomes": [
+      "Understand CI/CD concepts and workflows.",
+      "Use Jenkins and Maven for automation.",
+      "Integrate testing within DevOps pipelines."
+    ]
+  },
+  "automation testing with selenium": {
+    "skills": ["selenium", "automation frameworks"],
+    "difficulty": "intermediate",
+    "duration_weeks": 5,
+    "description": "Automate software testing using Selenium and modern frameworks.",
+    "prerequisites": "Basic knowledge of Java/Python and software testing.",
+    "outcomes": [
+      "Write automation scripts using Selenium.",
+      "Integrate Selenium with testing frameworks.",
+      "Perform cross-browser and regression testing."
+    ]
+  },
+
+  "manual testing foundations": {
+  "skills": ["manual testing", "test cases", "bug tracking"],
+  "difficulty": "Beginner",
+  "duration_weeks": 3,
+  "description": "Learn the fundamentals of manual QA testing including test case design, bug reporting, and defect tracking.",
+  "prerequisites": "Basic computer usage and software understanding.",
+  "outcomes": [
+    "Design and execute manual test cases effectively.",
+    "Identify, log, and track software bugs using tools.",
+    "Understand defect life cycle and QA documentation standards."
+  ]
+},
+
+"api testing with postman": {
+  "skills": ["api testing", "postman", "http methods"],
+  "difficulty": "Beginner",
+  "duration_weeks": 2,
+  "description": "Learn to validate and automate API tests using Postman, including request chaining and environment management.",
+  "prerequisites": "Basic knowledge of HTTP and web applications.",
+  "outcomes": [
+    "Send and validate API requests using Postman.",
+    "Use collections, environments, and variables in Postman.",
+    "Automate API workflows and generate reports."
+  ]
+},
+
+
+"automation frameworks design": {
+  "skills": ["framework design", "testng", "junit", "page object model"],
+  "difficulty": "Advanced",
+  "duration_weeks": 5,
+  "description": "Build scalable automation frameworks using TestNG/JUnit and Page Object Model patterns.",
+  "prerequisites": "Intermediate Java/Python knowledge and prior Selenium experience.",
+  "outcomes": [
+    "Design reusable automation frameworks with TestNG/JUnit.",
+    "Implement Page Object Model for maintainable test scripts.",
+    "Enhance automation with reporting and logging mechanisms."
+  ]
+},
+
+"continuous integration with jenkins": {
+  "skills": ["jenkins", "ci/cd", "automation"],
+  "difficulty": "Intermediate",
+  "duration_weeks": 3,
+  "description": "Integrate test automation into CI/CD pipelines with Jenkins, configuring jobs, pipelines, and reports.",
+  "prerequisites": "Basic understanding of automation testing and version control (Git).",
+  "outcomes": [
+    "Set up Jenkins jobs for automated builds and tests.",
+    "Configure CI/CD pipelines for software projects.",
+    "Generate and analyze test execution reports within Jenkins."
+  ]
+},
+
+"maven for test automation": {
+  "skills": ["maven", "build automation", "dependency management"],
+  "difficulty": "Beginner",
+  "duration_weeks": 2,
+  "description": "Manage test automation projects with Maven for build automation, dependency resolution, and reporting.",
+  "prerequisites": "Basic Java and test automation knowledge.",
+  "outcomes": [
+    "Set up Maven for Java-based test automation projects.",
+    "Manage dependencies using Maven’s pom.xml.",
+    "Generate test reports with Maven plugins."
+  ]
+}
+
+}

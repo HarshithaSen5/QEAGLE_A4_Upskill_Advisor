@@ -1,0 +1,44 @@
+{
+  "data analyst": {
+    "core": ["python", "sql", "statistics"],
+    "libraries": ["pandas", "numpy", "matplotlib", "seaborn"],
+    "tools": ["excel", "powerbi", "tableau"]
+  },
+  "software engineer": {
+    "core": ["python", "java", "dsa", "oop"],
+    "tools": ["git", "docker", "linux"],
+    "cloud": ["aws", "azure", "gcp"]
+  },
+  "qa engineer": {
+    "core": ["manual testing", "test cases", "bug tracking"],
+    "libraries": ["selenium", "pytest"],
+    "tools": ["jira", "postman"],
+    "concepts": ["api testing", "automation frameworks"]
+  },
+  "sdet": {
+    "core": ["java", "python", "dsa", "oop"],
+    "libraries": ["selenium", "rest-assured", "pytest"],
+    "tools": ["maven", "jenkins", "git"],
+    "concepts": ["automation frameworks", "ci/cd pipelines"]
+  },
+  "machine learning engineer": {
+    "core": ["python", "linear algebra", "probability", "ml algorithms"],
+    "libraries": ["scikit-learn", "tensorflow", "pytorch"],
+    "tools": ["jupyter", "git", "docker"],
+    "cloud": ["aws sagemaker", "gcp ai platform"]
+  },
+  "genai engineer": {
+    "core": ["python", "nlp", "transformers"],
+    "libraries": ["huggingface transformers", "langchain", "llamaindex"],
+    "tools": ["docker", "git"],
+    "concepts": ["prompt engineering", "rag systems", "vector databases"]
+  },
+  
+  "genai qa": {
+  "core": ["python", "software testing", "nlp basics"],
+  "libraries": ["pytest", "unittest", "langchain", "llamaindex"],
+  "tools": ["postman", "git", "docker"],
+  "concepts": ["test automation", "llm evaluation", "prompt testing", "rag validation", "vector db consistency checks"]
+}
+
+}
