@@ -149,7 +149,8 @@ Advanced Analytics Dashboard
 ### 🎯 Learning Path Output
 <img width="1890" height="945" alt="Screenshot 2025-09-27 110208" src="https://github.com/user-attachments/assets/730f34a8-4f38-4780-8bdb-50cc44732c82" />
 <img width="1894" height="956" alt="Screenshot 2025-09-27 110159" src="https://github.com/user-attachments/assets/f1e2fe8b-e137-46e2-9aad-d4a0149cc8f5" />
-[img](https://github.com/user-attachments/assets/fece07c8-de33-4e90-8d7b-92de48771dbb)
+<img width="1890" height="945" alt="Screenshot 2025-09-27 110208" src="https://github.com/user-attachments/assets/199da6a2-5fac-4a81-b03a-bba2b7ab4380" />
+<img width="1891" height="608" alt="Screenshot 2025-09-27 110216" src="https://github.com/user-attachments/assets/102e3bfb-2a83-403b-8c4d-7d26b0e26685" />
 
 
 
