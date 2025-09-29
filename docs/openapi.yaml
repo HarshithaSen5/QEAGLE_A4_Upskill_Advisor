@@ -1,0 +1,139 @@
+openapi: 3.0.3
+info:
+  title: Upskill Advisor API
+  version: 1.0.0
+  description: |
+    REST API for the Upskill Advisor project.
+    Provides endpoints to manage user roles, skills, recommend courses, and track progress.
+servers:
+  - url: http://localhost:5000
+    description: Local development
+tags:
+  - name: Health
+  - name: Roles
+  - name: Skills
+  - name: Recommendations
+paths:
+  "/":
+    get:
+      tags: [Health]
+      summary: Health check
+      operationId: getHealth
+      responses:
+        "200":
+          description: API is up
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: "✅ Upskill Advisor API is running!"
+  "/roles":
+    post:
+      tags: [Roles]
+      summary: Add a user role
+      operationId: postRole
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                role:
+                  type: string
+                  description: User role
+              required: [role]
+      responses:
+        "201":
+          description: Role added
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  role:
+                    type: string
+              example:
+                status: "success"
+                role: "Data Scientist"
+  "/skills":
+    post:
+      tags: [Skills]
+      summary: Add user skills
+      operationId: postSkills
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                skills:
+                  type: array
+                  items:
+                    type: string
+                  description: List of user skills
+              required: [skills]
+      responses:
+        "201":
+          description: Skills added
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                  skills:
+                    type: array
+                    items:
+                      type: string
+              example:
+                status: "success"
+                skills: ["Python", "Data Analysis"]
+  "/recommendations":
+    post:
+      tags: [Recommendations]
+      summary: Get course recommendations based on role and skills
+      operationId: postRecommendations
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                role:
+                  type: string
+                  description: User role
+                skills:
+                  type: array
+                  items:
+                    type: string
+                  description: List of user skills
+              required: [role, skills]
+      responses:
+        "200":
+          description: List of recommended courses
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    course:
+                      type: string
+                    provider:
+                      type: string
+                    url:
+                      type: string
+              example:
+                - course: "Advanced Python Programming"
+                  provider: "Coursera"
+                  url: "https://coursera.org/advanced-python"
+                - course: "Data Science with Python"
+                  provider: "edX"
+                  url: "https://edx.org/data-science-python"
